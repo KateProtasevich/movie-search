@@ -1,0 +1,152 @@
+body,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+.wrapper-keyboard {
+    height: auto;
+  /*max-width: 1200px;*/
+  width: 100%;
+  /*margin: 0 auto;*/
+  
+  /*background-color: lightgray;*/
+  font-family: Verdana, Tahoma, sans-serif;
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+}
+
+.close-keyboard {
+    width: 30px;
+    height: 30px;
+    background-image: url(cross.png);
+    background-size: cover;
+    border: 3px solid gray;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.close-keyboard:hover {
+border-color: rgb(20, 20, 20);
+}
+
+.keyboard {
+  width: 1000px;
+  position: relative;
+  /*margin: 0 auto;*/
+  padding: 5px;
+  background-color: rgb(89, 76, 76);
+  border-radius: 10px;
+}
+
+p.lang-hint {
+  margin: 20px 0;
+  font-size: 16px;
+  width: auto;
+}
+
+.lang-value {
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 4px;
+  width: 45px;
+  text-align: center;
+  background-color: lightslategrey;
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.lang-value:hover {
+    border: 2px solid rgb(23, 23, 41);
+}
+
+.button_base {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: maroon;
+  font-size: 16px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;  
+}
+
+.button_special {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: rgb(54, 3, 3);
+  font-size: 16px;
+  border-color: silver;
+  border-radius: 10px;
+  color: silver;
+}
+
+.button_push {
+  background-color: cyan;   
+}
+
+button:active {
+  border: 2px solid rgb(72, 23, 23);   
+}
+  
+  @keyframes bgcolor {
+0% {
+    background: radial-gradient(rgb(222, 108, 108),rgb(83, 13, 13));     
+    }
+    
+50% {
+    background: radial-gradient(rgb(251, 174, 174),rgb(68, 11, 11));    
+    }
+    
+100% {
+    background: radial-gradient(rgb(247, 151, 151),rgb(119, 20, 20));        
+    }
+  }
+  
+button:hover {
+  color: black;
+  animation: bgcolor 0.7s ease;
+  animation-iteration-count: infinite;  
+}
+
+.cals-lock {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid honeydew;
+  background-color: rgb(27, 27, 27);
+  border-radius: 50%;
+  top: 167px;
+  left: 115px;
+}
+
+.cals-lock_green {
+  background-color: lawngreen;
+}
+
+
+@media (max-width: 1280px) {
+    .footer__content {
+        width: 770px;
+    }
+    .keyboard {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__content {
+        width: 420px;
+    }
+    .keyboard-box {
+      display: none!important;
+    }
+}

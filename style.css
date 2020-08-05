@@ -1,0 +1,286 @@
+body,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+html {
+    /*height: 100%;*/
+    /*height: 1px;*/
+    background: url(assets/124671-kosmicheskoe_prostranstvo-nebo-atmosfera-astronomiya-kosmos-2560x1440.jpg) no-repeat black;
+    background-position: top center;
+    background-size: cover;
+}
+body {
+    width: 100%;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    /*height: 100%;*/
+    background-color: rgba(255,255,255, 0.5);
+    
+    
+    
+}
+.wrapper {
+    background-color: rgba(255,255,255, 0.5);
+    padding: 10px;
+    /*min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+main {
+    /*min-height: calc(100% - 180px);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: rgb(29, 28, 28);
+    
+
+}
+
+.logo::before {
+    content: "";   
+    display: inline-block;
+    background: url(assets/kisspng-clapperboard-film-cinematography-vector-film-slate-cards-5aa8a1dfeabc35.2111631315210009279615.png) no-repeat left bottom;  
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px; 
+    
+}
+header {
+    padding: 20px 0;
+    text-align: center;
+    height: 100px;
+}
+
+.keyboard-box {
+
+background-color: lightgray;
+position: absolute;
+left: 0;
+top: 40px;
+width: 100%;
+z-index: 100;
+display: flex;
+justify-content: center;
+display: none;
+}
+
+.input-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.search__text {
+    height: 40px;
+    width: calc(100% - 120px);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 130px 0 10px;
+}
+.search__button {
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.reset {
+    position: absolute;
+    right: 195px;
+    top: 0;
+    width: 45px;
+    height: 40px;
+    background: url(assets/cross.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.keyboard-icon {
+    position: absolute;
+    right: 140px;
+    top: 0;
+    width: 45px;
+    height: 40px;
+    background: url(assets/keyboard-icon-27930.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    
+}
+#poster-check,
+#rating-check {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.checkbox-container {
+width: 20%;
+}
+.range-container {
+width: 77%;
+text-align: center;
+}
+.range-rating {
+    margin-top: 20px;
+}
+.checkbox-rating {
+    margin-top: 50px;
+}
+.checkbox-poster {
+    margin-top: 30px;
+}
+
+
+
+.slider-box {
+    position: relative;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+}
+
+.result-message {  
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    color:black;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+
+footer {
+    height: 60px;
+}
+
+.footer__content {
+    width: 1530px;
+    padding-top: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    margin: 0 auto;
+    
+}
+
+.github {
+    background: url(assets/github.png) left no-repeat;
+    padding-left: 30px;
+    
+}
+
+.RSS {
+    background: url(assets/movie-camera.png) left no-repeat;
+    background-size: 40px 30px;
+   
+    padding-left: 45px;
+}
+
+.github a {
+    text-decoration: none;
+    color: black;
+}
+
+.github a:hover {
+    text-decoration:underline;
+    
+}
+
+@media (max-width: 1600px) {
+    .footer__content {
+        width: 1160px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer__content {
+        width: 770px;
+    }
+    .checkbox-container {
+        width: 25%;
+        }
+    .range-container {
+        width: 73%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__content {
+        width: 420px;
+    }
+    .checkbox-container {
+        width: 100%;
+        margin-top: 20px;
+        }
+    .range-container {
+        width: 98%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__content {
+        width: 300px;
+    }
+    .input-text {
+        flex-direction: column;
+    }
+    .search__text {
+        margin-bottom: 10px;
+        width: 100%;
+        
+    }
+    .reset {
+        
+        right: 50px;
+        top: 0;
+        
+        
+    }
+    .keyboard-icon {
+        
+        right: 0px;
+        top: 0;
+           
+    }
+    .RSS, 
+    .github {
+        background-image: none;
+        padding-left: 0;
+        font-size: 16px;
+    }
+   
+}
+
+
+
+
+    
+
+    
+
+    
+
+   
